@@ -1,0 +1,112 @@
+img {
+  width: auto;
+  height: 100px;
+}
+.CharacterName {
+  animation-name: colorchange;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: right;
+  animation-play-state: infinite;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+@keyframes colorchange {
+  0% {
+    background-color: aqua;
+  }
+  20% {
+    background-color: rgb(255, 230, 0) a;
+  }
+  40% {
+    background-color: rgb(55, 0, 255);
+  }
+  60% {
+    background-color: rgb(255, 0, 221) a;
+  }
+  80% {
+    background-color: rgb(51, 255, 0);
+  }
+  100% {
+    background-color: rgb(255, 0, 0);
+  }
+}
+
+#groot:hover {
+  animation-name: slideleft;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: right;
+  animation-play-state: running;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+@keyframes slideleft {
+  from {
+    transform: translateX(200%);
+  }
+}
+#spiderman:hover {
+  animation-name: slideright;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: right;
+  animation-play-state: running;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+@keyframes slideright {
+  to {
+    transform: translateX(300%);
+  }
+}
+#ironman:hover {
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: right;
+  animation-play-state: running;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+@keyframes rotate {
+  100% {
+    transform: rotateZ(300deg);
+  }
+}
+#joker:hover {
+  animation-name: grow;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: right;
+  animation-play-state: running;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+@keyframes grow {
+  100% {
+    transform: scale(2, 2);
+  }
+}
+#blackpanther:hover {
+  animation-name: shrink;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: right;
+  animation-play-state: running;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+@keyframes shrink {
+  100% {
+    transform: scale(0.5, 0.5);
+  }
+}
+#batman:hover {
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: right;
+  animation-play-state: running;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 0;
+}
+@keyframes fade {
+  100% {
+    opacity: 1;
+  }
+}
